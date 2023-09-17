@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="top-nav" data-aos="fade-down">
+            <p id="top-text" class="">Cash on Delivery in all over Bharat</p>
+        </nav>
+    </div>
+    <div class="mainContainer" id="main-container">
+        <!-- Navbar & Header -->
+        <div class="navigation" id="navigation" style="overflow: hidden;">
+            <div class="big-header">
+                <div class="header">
+                    <div class="logo" data-aos="fade-right">
+                        <a href="#" class="logo-links">iCoder</a>
+                    </div>
+                    <div class="pages-links" style="padding-top: 10px;">
+                        <ul class="unorderList" data-aos="fade-up">
+                            <a class="linkPage" href="/index.html">
+                                <li id="home" class="page-link pages-links-home">Home</li>
+                            </a>
+                            <a class="linkPage" href="/Pages/Services.html">
+                                <li id="service" class="page-link pages-links-service">Service</li>
+                            </a>
+                            <a class="linkPage" href="/Pages/Contact.html">
+                                <li id="contact" class="page-link pages-links-contact">Contact Us</li>
+                            </a>
+                            <a class="linkPage" href="/Pages/About.html">
+                                <li id="about" class="page-link pages-links-about">About</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="user-icons" data-aos="fade-left">
+                        <a id="search" class="search-link" href="#"><i
+                                class="search fa-solid fa-magnifying-glass"></i></a>
+                        <a id="login" class="user-link" href="#"><i class="user fa-solid fa-user"></i></a>
+                        <a id="cart" class="cart-link" href="/Pages/cart.html"><i
+                                class="cart fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
+                    <div class="bar">
+                        <i id="bar" class="fa fa-bars" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar & Header -->
+        <!-- search-box -->
+        <div class="big-search-box " id="big-search-box">
+            <div class="searchBox animate__animated animate__bounceInDown">
+                <div class="fields">
+                    <p id="notify">Search that what you want to see | Close this icons by clicking button*</p>
+                    <button id="btn"><i class="fa fa-close"></i></button>
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Enter you Text here.." id="text">
+                    <button id="search-btn"><i class="fa fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- end search box -->
+        <!-- signup and login start -->
+        <div class="login-signup-container" id="login-signup-container" >
+            <div class="big_login animate__animated animate__bounceInLeft">
+                <div class="login-container">
+                    <p id="alert-text" class="animate__animated animate__bounceInDown"
+                        style="color: red; text-align: center; position: absolute; top: 10px;"></p>
+                    <div class="close-login-button">
+                        <button id="close-btn-login"><i class="fa fa-close"></i></button>
+                    </div>
+                    <div class="title">
+                        <h1 id="login-logo-text">iCoder</h1>
+                    </div>
+                    <div class="loginText">
+                        <h1 id="login-suggestion">Login in to your account</h1>
+                    </div>
+                    <div class="input-field-login">
+                        <div class="email-field">
+                            <div class="emailLabel">
+                                <label for="email">Email</label>
+                            </div>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="password-field">
+                            <div class="lable_forgot-link">
+                                <label for="password">Password</label>
+                                <a href="#" id="fotgot-link">Forgot password</a>
+                            </div>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+
+                    <div class="button-submit-login">
+                        <button type="submit" id="submit-login-auth">Submit</button>
+                    </div>
+                    <div class="signUp">
+                        <p class="signupText">If you have no account <a href="#">SignUp</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- signup and login end -->
+        <!-- slider start -->
+
+        <div class="slider-container animate__animated animate__bounceInRight" style="overflow: hidden;">
+            <img src="https://loxlen.com/wp-content/uploads/2023/06/Explore-your-true-style.-2-scaled.jpg" alt="slide1"
+                class="slider">
+            <img src="https://loxlen.com/wp-content/uploads/2023/08/Upgrade-your-Style.jpg" alt="slide2" class="slider"
+                data-aos="fade-down">
+
+            <img src="https://loxlen.com/wp-content/uploads/2023/06/Explore-your-true-style.-1-scaled.jpg" alt="slide3"
+                class="slider">
+
+            <div class="button_left-right">
+                <button id="left-btn"><i onclick="button_prev()" class="leftPrev fa fa-arrow-left"></i></button>
+                <button id="right-btn"><i onclick="button_next()" class="rightNext fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <!-- slider end -->
+<!-- two aside box start -->
+        <div class="two-aside-container" style="overflow: hidden;">
+            <div class="left-container-box" data-aos="fade-right">
+
+            </div>
+            <div class="right-container-box" data-aos="fade-left">
+
+            </div>
+        </div>
+        <!-- two aside box end -->
+
+        <!-- one max-div container -->
+        <div class="big-image-container" data-aos="fade-right" style="overflow: hidden;">
+            <div class="image-container-section">
+                <div class="button-big-container-sec">
+                    <button id="btn-div-container">
+                        <span>
+                            Know more <i style="padding-left: 5px;" class="fa fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- one max-div container end -->
+        
+       
+                <!-- category start -->
+                <div class="container-category-section" data-aos="fade-down" style="overflow: hidden;">
+                    <div class="category-title">
+                        <h1>Category</h1>
+                    </div>
+                    <div class="category-img-container" data-aos="fade-up">
+                        <!-- img-container-category 1 -->
+                        <div class="img-container" data-aos="fade-right">
+                            <div class="img-box" id="cat1">
+                            </div>
+                            <div class="title-img-category">
+                                <a class="cat-link" href="#">
+                                    <p>Brazzer Tunic</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- img-contaner-category 2 -->
+                        <div class="img-container" data-aos="fade-right">
+                            <div class="img-box" id="cat2">
+                            </div>
+                            <div class="title-img-category">
+                                <a class="cat-link" href="#">
+                                    <p>Kurta</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- img-contaner-category 3 -->
+                        <div class="img-container" data-aos="fade-down">
+                            <div class="img-box" id="cat3">
+                            </div>
+                            <div class="title-img-category">
+                                <a class="cat-link" href="#">
+                                    <p>Nehru Jacket</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- img-contaner-category 4 -->
+                        <div class="img-container" data-aos="fade-left">
+                            <div class="img-box" id="cat4">
+                            </div>
+                            <div class="title-img-category">
+                                <a class="cat-link" href="#">
+                                    <p>Shirt</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- img-contaner-category 5 -->
+                        <div class="img-container" data-aos="fade-left">
+                            <div class="img-box" id="cat5">
+        
+                            </div>
+                            <div class="title-img-category">
+                                <a class="cat-link" href="#">
+                                    <p>Trouser</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- img-contaner-category 6 -->
+                        <div class="img-container">
+                            <div class="img-box" id="cat6">
+                            </div>
+                            <div class="title-img-category">
+                                <a class="cat-link" href="#">
+                                    <p>More Info</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- category end -->
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+@media (max-width : 900px) {
+    .pages-links{
+        display: none;
+    }
+    .user-icons{
+        display: none !important;
+    }
+    .bar{
+        display: block !important;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .header{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .slider-container{
+        height: 215px !important;
+    }
+    .searchBox{
+        left: 5% !important;
+        width: 90% !important;
+    }
+    #notify{
+        font-size: 15px;
+        padding: 5px;
+    }
+    #btn{
+        margin-right: 3px;
+    }
+    #search-btn{
+        width: 16% !important;
+    }
+    .login-container{
+        width: 94% !important;
+    }
+    #email,#password{
+        border: 1px solid black;
+    }
+    .img-box{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .image-container-section{
+        background-position: -274px !important;
+        height: 85vh !important;
+    }
+    .big-image-container{
+        padding: 3px !important;
+    }
+    .button-big-container-sec{
+        bottom: 5% !important;
+        right: 5% !important;
+    }
+    .two-aside-container{
+        flex-direction: row;
+        height: 50vh !important;
+        gap: 10px;
+        
+    }
+    .left-container-box{
+        width: 50% !important;
+       
+    }
+    .right-container-box{
+        width: 50% !important;
+    }
+}

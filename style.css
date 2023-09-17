@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(mediaQueries.css);
+
+body,
+html {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    gap: 10px;
+}
+
+.linkPage {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.top-nav {
+    padding: 10px;
+    color: black;
+}
+
+.big-header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: -9px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 70px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.unorderList {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.user-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo-links {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.pages-links-home,
+.pages-links-service,
+.pages-links-about,
+.pages-links-contact {
+    margin: 0px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.page-link::before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    width: 0%;
+    transition: width 0.5s linear;
+    left: 0%;
+    height: 1.5px;
+    background: white;
+}
+
+.page-link:hover::before {
+    width: 100%;
+}
+
+.user-link,
+.cart-link,
+.search-link {
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+/* search box */
+#big-search-box {
+    display: none;
+    transition: all 0.5s linear;
+}
+
+.searchBox {
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    height: 150px;
+    box-shadow: 1px 1px 7px grey;
+}
+
+.fields {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    background: black;
+    color: white;
+
+}
+
+#btn {
+    padding: 6px 10px;
+    border: 1px solid white;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.input_field {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    border-top: 1px solid black;
+    border-right: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+}
+
+#search-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 17px;
+
+}
+
+/* end search box */
+/* signup and login css start */
+.login-signup-container {
+    display: none;
+}
+
+.big_login {
+    position: absolute;
+    width: 100%;
+    top: 12%;
+}
+
+.login-container {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    border: 1px solid white;
+    gap: 25px;
+    height: 500px;
+    box-shadow: 1px 1px 7px grey;
+    margin: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.loginText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-submit-login {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email,
+#password {
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    margin-top: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.lable_forgot-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submit-login-auth {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#login-logo-text {
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#login-suggestion {
+    font-size: 20px;
+}
+
+#fotgot-link {
+    color: black;
+}
+
+#close-btn-login {
+    width: 50px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-login-button {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    justify-content: end;
+    align-items: end;
+}
+
+/* signup and login css end */
+/* slider start */
+.slider-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 655px;
+}
+.slider{
+    width: 100%;
+    transition: 1s;
+    position: absolute;
+    cursor: pointer;
+}
+.button_left-right{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.leftPrev{
+    position: absolute;
+    left: 0%;
+    font-size: 25px;
+    cursor: pointer;
+    mix-blend-mode: difference;
+    color: white;
+}
+.rightNext{
+    position: absolute;
+    right: 0%;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    mix-blend-mode: difference;
+    
+}
+#left-btn,#right-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 35px;
+}
+
+
+.bar{
+    display: none;
+}
+
+/* category section start */
+.container-category-section{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important;
+    gap: 50px;
+    align-items: center;
+}
+.category-title{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.category-img-container{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img-container{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+.category-title{
+    color: black;
+}
+.title-img-category{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+.cat-link{
+    color: black;
+    text-decoration: none;
+}
+.img-box{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#cat1{
+    background-image: url('BLAZER_ICON_a2b224ed-c06b-42a4-9d03-69bebffc71c1.webp');
+    background-size: cover;
+    background-position: center;
+}
+#cat2{
+    background-image: url('TUNIC_ICON_4f81d464-0076-4796-90f9-7c8e1efd5142.webp');
+    background-size: cover;
+    background-position: center;
+}
+#cat3{
+    background-image: url('nehru_jacket_15ee32af-bc1d-4486-b084-b0ceb15c7034.webp');
+    background-size: cover;
+    background-position: center;
+}
+#cat4{
+    background-image: url('shirt_icon_082f6616-32f8-4d26-8e7a-46a39f7e411d.webp');
+    background-size: cover;
+    background-position: center;
+}
+#cat5{
+    background-image: url('trouser_icon_b0669cd4-6858-407b-bc77-397e9bff78f0.webp');
+    background-size: cover;
+    background-position: center;
+}
+#cat6{
+    background-image: url('logo_icon_6463f1dc-6d7a-42ed-b410-db208458887d.webp');
+    background-size: cover;
+    background-position: center;
+}
+/* category section end  */
+/* big one image container */
+.big-image-container{
+    width: 100%;
+    margin-top: 100px;
+    padding: 1px;
+}
+.image-container-section{
+    background-image: url('Home_Page_Banner_L.webp');
+    background-position-x: -60px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+}
+.button-big-container-sec{
+    position: absolute;
+    right: 16%;
+    bottom: 27%;
+}
+#btn-div-container {
+    padding: 0.1em 0.25em;
+    cursor: pointer;
+    width: 13em;
+    height: 4.2em;
+    background-color: transparent;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+  }
+  
+  #btn-div-container span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: transparent;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  #btn-div-container span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  #btn-div-container span:not(hover) {
+    transition: all 1s;
+  }
+/* big one image container end */
+
+.two-aside-container{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    padding: 3px;
+}
+.left-container-box{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://mrbutton.in/cdn/shop/files/Artboard_5.png?v=1685971653);
+    background-position: center;
+    background-size: cover;
+}
+.right-container-box{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://mrbutton.in/cdn/shop/files/Artboard_6_aca07a69-1643-4c47-be37-e8e9fd0617f7.png?v=1685971653);
+    background-position: center;
+    background-size: cover;
+}
